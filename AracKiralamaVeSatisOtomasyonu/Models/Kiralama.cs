@@ -16,6 +16,6 @@ namespace AracKiralamaVeSatisOtomasyonu.Models
         public DateTime BaslangicTarihi { get; set; }
         public DateTime BitisTarihi { get; set; }
         public decimal GunlukUcret { get; set; }
-        public decimal ToplamTutar =>(decimal)(BitisTarihi-BaslangicTarihi).TotalDays*GunlukUcret;
+        public decimal ToplamTutar =>(decimal)(BitisTarihi-BaslangicTarihi).TotalDays * GunlukUcret;
     }
 }
