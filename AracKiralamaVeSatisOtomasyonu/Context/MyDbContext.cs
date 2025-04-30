@@ -18,7 +18,7 @@ namespace AracKiralamaVeSatisOtomasyonu.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=BURAKSENOL\\SQLEXPRESS;Database=AracKiralamaVeSatisOtomasyonuDb;Trusted_Connection=True;Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=BURAKSENOL\\SQLEXPRESS;Database=AracKiralamaVeSatisOtomasyonuDb;Trusted_Connection=True;TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
