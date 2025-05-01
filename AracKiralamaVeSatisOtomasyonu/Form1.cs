@@ -15,7 +15,8 @@ namespace AracKiralamaVeSatisOtomasyonu
 
         private void btnAracIslemleri_Click_1(object sender, EventArgs e)
         {
-
+            FRMAracIslemleri fRMAracIslemleri = new FRMAracIslemleri();
+            fRMAracIslemleri.ShowDialog();     
         }
     }
 }
