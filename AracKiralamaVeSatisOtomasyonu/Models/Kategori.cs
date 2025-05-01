@@ -11,5 +11,10 @@ namespace AracKiralamaVeSatisOtomasyonu.Models
         public int KategoriId { get; set; }
         public string KategoriAdi { get; set; }
         public List<Arac> Araclar { get; set; }
+
+        public override string ToString()
+        {
+            return KategoriAdi;
+        }
     }
 }

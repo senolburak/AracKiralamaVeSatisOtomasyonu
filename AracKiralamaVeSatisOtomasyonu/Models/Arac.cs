@@ -18,7 +18,7 @@ namespace AracKiralamaVeSatisOtomasyonu.Models
         public string Renk { get; set; }
         public string Durum { get; set; } // Araç kiralık mı satılıkmı
         public string MevcutDurum { get; set; } //Kirada , satılık,boşta
-        public string KategoriId { get; set; } 
+        public int KategoriId { get; set; } 
         public Kategori Kategori { get; set; }
         public List<Kiralama> Kiralamalar { get; set; }
         public List<Satis> Satislar { get; set; }

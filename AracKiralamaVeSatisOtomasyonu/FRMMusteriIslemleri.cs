@@ -26,6 +26,7 @@ namespace AracKiralamaVeSatisOtomasyonu
                 .Select(
                 m => new
                 {
+                    m.MusteriId,
                     m.AdSoyad,
                     m.Telefon,
                     m.Email,
@@ -59,7 +60,7 @@ namespace AracKiralamaVeSatisOtomasyonu
         {
             if (dgvMusteriler.CurrentRow != null)
             {
-                int id = (int)(dgvMusteriler.CurrentRow.Cells["Id"].Value);
+                int id = (int)(dgvMusteriler.CurrentRow.Cells["MusteriId"].Value);
                 var musteri = _db.Musteri.Find(id);
                 if (musteri != null)
                 {
